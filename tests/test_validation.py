@@ -1,4 +1,4 @@
-from sgmc.generation import generate_valid_solution, random_solution
+from sgmc.generation import generate_valid_solution, random_solution, random_valid_solution
 from sgmc.validation import validate_solution
 
 
@@ -9,3 +9,4 @@ def test_random():
 
 def test_valid():
     assert validate_solution(generate_valid_solution())
+    assert validate_solution(random_valid_solution())
