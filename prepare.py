@@ -1,5 +1,6 @@
-import sys
 import argparse
+import sys
+
 from os.path import join
 from scipy.sparse import csr_matrix, save_npz
 
